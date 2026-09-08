@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Care by KindHeart</title>
+<meta name="description" content="Request a free care assessment or ask about careers at Care by KindHeart, serving Spokane County, WA. Call (908) 666-3853 or send a message.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <svg class="brand__mark" width="34" height="34" viewBox="0 0 40 40" aria-hidden="true">
+        <path style="fill:var(--green-950)" d="M20 34C20 34 6 25.6 6 15.8C6 10.4 10.2 7 14.6 7C17.2 7 19.2 8.4 20 10.4C20.8 8.4 22.8 7 25.4 7C29.8 7 34 10.4 34 15.8C34 25.6 20 34 20 34Z"/>
+        <path style="fill:var(--teal-600)" d="M20 34C20 34 6 25.6 6 15.8C6 12.9 7.4 10.6 9.4 9.2C9.1 10 9 10.9 9 11.8C9 20 20 27 20 27C20 27 31 20 31 11.8C31 10.9 30.9 10 30.6 9.2C32.6 10.6 34 12.9 34 15.8C34 25.6 20 34 20 34Z"/>
+        <circle cx="20" cy="16" r="3" style="fill:var(--gold-500)"/>
+      </svg>
+      <span>Care by KindHeart<small>Home Care Services</small></span>
+    </a>
+    <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="primary-nav" data-nav-links>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="caregivers.html">Careers</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+    <div class="nav__actions">
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg>
+      </button>
+      <a class="btn btn--gold btn--sm" href="tel:+19086663853"><span class="btn__icon" aria-hidden="true">&#128222;</span><span class="btn__label">Call Us</span></a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-banner page-banner--photo" style="background-image:url('assets/images/front-view-cute-couple-wearing-linen-clothing.jpg');">
+    <div class="container reveal">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+      <span class="eyebrow">Get in touch</span>
+      <h1>Let's figure out what your family needs</h1>
+      <p class="lede">Fill out the form and a care coordinator calls within one business day. They're not reading from a script. They're listening to understand your situation before they recommend anything.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container hero__grid" style="align-items:flex-start;">
+      <div class="card reveal">
+        <h2 style="margin-top:0;">Request a free assessment</h2>
+        <form data-form>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="c-name">Full name</label>
+              <input id="c-name" name="name" type="text" required autocomplete="name">
+            </div>
+            <div class="form-field">
+              <label for="c-phone">Phone</label>
+              <input id="c-phone" name="phone" type="tel" required autocomplete="tel">
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="c-email">Email</label>
+            <input id="c-email" name="email" type="email" required autocomplete="email">
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="c-relation">You are inquiring as a</label>
+              <select id="c-relation" name="relation">
+                <option>Prospective client</option>
+                <option>Family member</option>
+                <option>Healthcare professional</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="c-service">Service of interest</label>
+              <select id="c-service" name="service">
+                <option>Senior &amp; elder care</option>
+                <option>Disability support (adults)</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="c-message">Tell us a bit about your situation</label>
+            <textarea id="c-message" name="message" rows="4"></textarea>
+          </div>
+          <div class="form-field checkbox-field">
+            <input id="c-consent" name="consent" type="checkbox" required>
+            <label for="c-consent" style="font-weight:400;">I agree to be contacted by phone, text, or email about this request, per the <a href="privacy-policy.html">Privacy Policy</a>.</label>
+          </div>
+          <button class="btn btn--primary" type="submit" style="width:100%;">Send request</button>
+          <p class="form-note" data-form-status></p>
+        </form>
+      </div>
+
+      <div class="reveal">
+        <h3>Reach us directly</h3>
+        <ul class="list-flex" style="list-style:none;padding:0;display:flex;flex-direction:column;gap:18px;margin-bottom:32px;">
+          <li>
+            <strong style="display:block;color:var(--brand-teal-hover);">Phone</strong>
+            <a href="tel:+19086663853" style="text-decoration:none;">(908) 666-3853</a> &middot; Mon&ndash;Fri, 8am&ndash;6pm, Sat 8am&ndash;3pm. Urgent situations can often be seen within 1&ndash;3 hours.
+          </li>
+          <li>
+            <strong style="display:block;color:var(--brand-teal-hover);">Email</strong>
+            <a href="mailto:hello@carebykindheart.org" style="text-decoration:none;">hello@carebykindheart.org</a>
+          </li>
+          <li>
+            <strong style="display:block;color:var(--brand-teal-hover);">Careers</strong>
+            <a href="mailto:careers@carebykindheart.org" style="text-decoration:none;">careers@carebykindheart.org</a>
+          </li>
+          <li>
+            <strong style="display:block;color:var(--brand-teal-hover);">Main office</strong>
+            821 N Stanley St<br>Medical Lake, WA 99022<br>United States
+          </li>
+        </ul>
+        <div class="map-frame">
+          <svg viewBox="0 0 400 225" width="100%" height="100%" role="img" aria-label="Map placeholder showing office location">
+            <rect width="400" height="225" style="fill:var(--teal-100)"/>
+            <path d="M0 160 Q100 120 200 155 T400 140" stroke="var(--teal-500)" stroke-width="10" fill="none" opacity="0.5"/>
+            <path d="M0 90 Q150 60 260 95 T400 70" stroke="var(--teal-500)" stroke-width="6" fill="none" opacity="0.4"/>
+            <circle cx="200" cy="112" r="9" style="fill:var(--gold-600)"/>
+            <circle cx="200" cy="112" r="16" fill="none" stroke="var(--gold-600)" stroke-width="2" opacity="0.5"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-breaker reveal" style="background-image:url('assets/images/pixabay-senior-man-guitar-7770930.jpg');">
+    <div class="section-breaker__content">
+      <span class="eyebrow">Life doesn't stop</span>
+      <h2>Home care should support your life, not replace it</h2>
+      <p>The goal was never to take over. It's to make it possible to keep doing the things that matter to you.</p>
+    </div>
+  </section>
+
+  <section class="section section--brand">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" style="color:var(--gold-300);">What to expect</span>
+        <h2>You'll talk to the people who run this company</h2>
+        <p class="lede" style="color:rgba(255,255,255,0.85);">We're a small, local team based right here in Spokane County. When you call, you're not routed through a call center — you're talking to someone who can actually make a decision about your care.</p>
+      </div>
+      <div class="grid grid--3 reveal-stagger">
+        <div class="card" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.18);">
+          <h3 style="color:#fff;">Same day</h3>
+          <p style="color:rgba(255,255,255,0.8);">Care can often start the same day you call, once we understand what you need.</p>
+        </div>
+        <div class="card" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.18);">
+          <h3 style="color:#fff;">1&ndash;3 hours</h3>
+          <p style="color:rgba(255,255,255,0.8);">Our fastest realistic response time for urgent situations.</p>
+        </div>
+        <div class="card" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.18);">
+          <h3 style="color:#fff;">Spokane County</h3>
+          <p style="color:rgba(255,255,255,0.8);">Where we currently provide in-home care, with plans to grow carefully from here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a class="brand" href="index.html" style="color:#fff;">
+        <svg class="brand__mark" width="30" height="30" viewBox="0 0 40 40" aria-hidden="true">
+          <path style="fill:var(--teal-300)" d="M20 34C20 34 6 25.6 6 15.8C6 10.4 10.2 7 14.6 7C17.2 7 19.2 8.4 20 10.4C20.8 8.4 22.8 7 25.4 7C29.8 7 34 10.4 34 15.8C34 25.6 20 34 20 34Z"/>
+          <circle cx="20" cy="16" r="3" style="fill:var(--gold-500)"/>
+        </svg>
+        <span>Care by KindHeart</span>
+      </a>
+      <p>A home care agency serving families in Spokane County, Washington, since 2026.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5H16l.5-3h-3V8.5c0-.9.25-1.5 1.55-1.5H16.5V4.3C16.2 4.26 15.2 4.17 14 4.17c-2.4 0-4 1.47-4 4.17V10.5H7.5v3H10V21h3.5z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.53-1 1.83-2 3.77-2 4.03 0 4.78 2.5 4.78 5.8V21h-4v-5.6c0-1.35-.02-3.1-1.9-3.1-1.9 0-2.2 1.5-2.2 3v5.7H9z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="services.html">Our services</a></li>
+        <li><a href="caregivers.html">Careers</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="brand-guide.html">Brand guide</a></li>
+        <li><a href="privacy-policy.html">Privacy policy</a></li>
+        <li><a href="terms-of-service.html">Terms of service</a></li>
+        <li><a href="cookie-policy.html">Cookie policy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>821 N Stanley St<br>Medical Lake, WA 99022<br>United States</li>
+        <li><a href="tel:+19086663853">(908) 666-3853</a></li>
+        <li><a href="mailto:hello@carebykindheart.org">hello@carebykindheart.org</a></li>
+        <li>Mon&ndash;Fri, 8am&ndash;6pm, Sat 8am&ndash;3pm</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>&copy; 2026 Care by KindHeart, LLC.</span>
+    <ul>
+      <li><a href="privacy-policy.html">Privacy</a></li>
+      <li><a href="terms-of-service.html">Terms</a></li>
+      <li><a href="cookie-policy.html">Cookies</a></li>
+      <li><a href="brand-guide.html">Brand</a></li>
+    </ul>
+  </div>
+</footer>
+
+<button class="back-to-top" data-back-to-top aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<div class="cookie-banner" data-cookie-banner role="dialog" aria-label="Cookie notice">
+  <h3>We use a few cookies</h3>
+  <p>We use essential cookies to run this site and optional analytics cookies to understand how visitors use it. You can change your choice anytime from our <a href="cookie-policy.html">Cookie Policy</a>.</p>
+  <div class="cookie-banner__actions">
+    <button class="btn btn--primary btn--sm" data-cookie-accept>Accept all</button>
+    <button class="btn btn--outline btn--sm" data-cookie-decline>Essential only</button>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "static-site",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [".claude/serve.py"],
+      "port": 5679,
+      "autoPort": true
+    }
+  ]
+}
