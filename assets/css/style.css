@@ -291,7 +291,7 @@ li:last-child { margin-bottom: 0; }
   font-weight: 600;
   font-size: 0.98rem;
   padding: 14px 28px;
-  border-radius: var(--radius-pill);
+  border-radius: var(--radius-md);
   border: 2px solid transparent;
   cursor: pointer;
   text-decoration: none;
