@@ -175,28 +175,7 @@
       });
     });
 
-    /* ---------- Scroll progress bar ---------- */
     var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (!reduceMotion) {
-      var progressBar = document.createElement('div');
-      progressBar.className = 'scroll-progress';
-      document.body.appendChild(progressBar);
-      var progressTicking = false;
-      function updateProgress() {
-        var scrollTop = window.pageYOffset;
-        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
-        var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-        progressBar.style.width = pct + '%';
-        progressTicking = false;
-      }
-      window.addEventListener('scroll', function () {
-        if (!progressTicking) {
-          requestAnimationFrame(updateProgress);
-          progressTicking = true;
-        }
-      }, { passive: true });
-      updateProgress();
-    }
 
     /* ---------- Count-up animation for numeric stats ---------- */
     if ('IntersectionObserver' in window && !reduceMotion) {

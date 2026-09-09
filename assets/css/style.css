@@ -305,8 +305,8 @@ li:last-child { margin-bottom: 0; }
 .btn--primary { background: var(--brand-teal); border-color: var(--brand-teal); color: #0c231f; box-shadow: var(--neu-cast-shadow); }
 .btn--primary:hover { background: var(--brand-teal-hover); border-color: var(--brand-teal-hover); box-shadow: var(--shadow-md); }
 .btn--primary:active { box-shadow: inset 3px 3px 6px rgba(0,0,0,0.25); transform: translateY(1px); }
-.btn--outline { background: var(--neu-base); border-color: transparent; color: var(--text); box-shadow: var(--neu-shadow-raised); }
-.btn--outline:hover { box-shadow: var(--neu-shadow-raised-hover); transform: translateY(-3px); }
+.btn--outline { background: var(--neu-base); border-color: var(--border-strong); color: var(--text); box-shadow: var(--neu-shadow-raised); }
+.btn--outline:hover { box-shadow: var(--neu-shadow-raised-hover); border-color: var(--brand-teal); transform: translateY(-3px); }
 .btn--outline:active { box-shadow: var(--neu-shadow-pressed); transform: translateY(0); }
 .btn--gold { background: var(--brand-gold); border-color: var(--brand-gold); color: #362707; box-shadow: var(--neu-cast-shadow); }
 .btn--gold:hover { background: var(--brand-gold-hover); border-color: var(--brand-gold-hover); box-shadow: var(--shadow-md); }
@@ -474,7 +474,8 @@ li:last-child { margin-bottom: 0; }
   background: linear-gradient(100deg, rgba(4,27,21,0.94) 0%, rgba(4,27,21,0.82) 40%, rgba(4,27,21,0.5) 78%, rgba(4,27,21,0.3) 100%);
   z-index: 0;
 }
-.hero--photo > .container { position: relative; z-index: 1; max-width: 680px; }
+.hero--photo > .container { position: relative; z-index: 1; }
+.hero--photo > .container > .reveal { max-width: 680px; }
 .hero--photo .eyebrow { color: var(--gold-500); margin-bottom: 24px; }
 .hero--photo .eyebrow::before { background: var(--gold-500); }
 .hero--photo h1 { color: #fff; margin-bottom: 30px; line-height: 1.16; }
@@ -625,7 +626,7 @@ li:last-child { margin-bottom: 0; }
 
 /* --- CTA banner --- */
 .cta-banner {
-  background: var(--brand-crimson);
+  background: var(--brand-teal);
   border-radius: var(--radius-lg);
   padding: 56px;
   color: var(--text-on-brand);
@@ -752,18 +753,6 @@ li:last-child { margin-bottom: 0; }
 .page-banner--photo .eyebrow::before { background: var(--gold-500); }
 .page-banner--photo .lede { color: rgba(255,255,255,0.9); }
 @media (max-width: 640px) { .page-banner--photo { padding: 88px 0 64px; } }
-
-/* --- Scroll progress bar --- */
-.scroll-progress {
-  position: fixed;
-  top: 0; left: 0;
-  height: 3px;
-  width: 0%;
-  background: var(--brand-teal);
-  z-index: 1100;
-  transition: width 0.1s linear;
-}
-@media (prefers-reduced-motion: reduce) { .scroll-progress { display: none; } }
 
 /* --- Skip link & focus --- */
 .skip-link {
