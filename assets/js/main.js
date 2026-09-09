@@ -149,13 +149,26 @@
       if (declineBtn) declineBtn.addEventListener('click', function () { dismiss('declined'); });
     }
 
-    /* ---------- Simple client-side form feedback (no backend wired up) ---------- */
+    /* ---------- Form submission via mailto (no server backend on this static site) ---------- */
     document.querySelectorAll('[data-form]').forEach(function (form) {
       form.addEventListener('submit', function (e) {
         e.preventDefault();
         var note = form.querySelector('[data-form-status]');
+        var to = form.getAttribute('data-mailto') || 'hello@carebykindheart.org';
+        var subject = form.getAttribute('data-mailto-subject') || 'Website inquiry';
+        var lines = [];
+        Array.prototype.forEach.call(form.elements, function (el) {
+          if (!el.name || el.type === 'submit' || el.type === 'checkbox' || !el.value) return;
+          var label = form.querySelector('label[for="' + el.id + '"]');
+          var labelText = label ? label.textContent.replace(/\s+/g, ' ').trim() : el.name;
+          lines.push(labelText + ': ' + el.value);
+        });
+        var mailtoUrl = 'mailto:' + encodeURIComponent(to) +
+          '?subject=' + encodeURIComponent(subject) +
+          '&body=' + encodeURIComponent(lines.join('\n'));
+        window.location.href = mailtoUrl;
         if (note) {
-          note.textContent = 'Thank you. Your message has been noted — our care team will reach out within one business day.';
+          note.textContent = 'Opening your email app with this filled in — just hit send there to reach our team. Prefer to talk instead? Call (908) 666-3853.';
           note.style.color = 'var(--brand-teal-hover)';
         }
         form.reset();
