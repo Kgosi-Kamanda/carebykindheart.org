@@ -43,12 +43,12 @@
   --stone-400: #c9b896;
   --stone-200: #eddfc0;
   --stone-100: #f7ecd3;
-  --stone-50: #fdf6e8;
+  --stone-50: #fffaf0;
   --white: #ffffff;
 
   /* --- Semantic tokens: light mode --- */
   --bg: var(--neu-base);
-  --bg-alt: #f2e4c8;
+  --bg-alt: #f8ecd5;
   --surface: var(--neu-base);
   --surface-raised: var(--neu-base);
   --text: var(--stone-900);
@@ -79,9 +79,9 @@
 
   /* --- Neumorphism: carve-able base + light-source shadow pair --- */
   --neu-radius: 22px;
-  --neu-base: #fdf6e8;
+  --neu-base: #fffaf0;
   --neu-light-rgb: 255, 255, 255;
-  --neu-dark-rgb: 196, 178, 140;
+  --neu-dark-rgb: 205, 190, 155;
   --neu-shadow-raised:
     4px 4px 8px rgba(var(--neu-dark-rgb), 0.32),
     -4px -4px 8px rgba(var(--neu-light-rgb), 0.5);
@@ -108,7 +108,7 @@
   :root:not([data-theme="light"]) {
     --bg: #2a1f16;
     --bg-alt: #352718;
-    --surface: #40301f;
+    --surface: #3a2a1d;
     --surface-raised: #40301f;
     --text: #f7ecd9;
     --text-muted: #c9b596;
@@ -129,7 +129,7 @@
     --shadow-color: 27 35% 4%;
     color-scheme: dark;
 
-    --neu-base: #40301f;
+    --neu-base: #3a2a1d;
     --neu-light-rgb: 255, 255, 255;
     --neu-dark-rgb: 0, 0, 0;
     --neu-shadow-raised:
@@ -147,7 +147,7 @@
     --neu-cast-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
 
     --bg: var(--neu-base);
-    --bg-alt: #4a3928;
+    --bg-alt: #4a3627;
     --surface: var(--neu-base);
     --surface-raised: var(--neu-base);
   }
@@ -156,7 +156,7 @@
 :root[data-theme="dark"] {
   --bg: #2a1f16;
   --bg-alt: #352718;
-  --surface: #40301f;
+  --surface: #3a2a1d;
   --surface-raised: #40301f;
   --text: #f7ecd9;
   --text-muted: #c9b596;
@@ -177,7 +177,7 @@
   --shadow-color: 27 35% 4%;
   color-scheme: dark;
 
-  --neu-base: #40301f;
+  --neu-base: #3a2a1d;
   --neu-light-rgb: 255, 255, 255;
   --neu-dark-rgb: 0, 0, 0;
   --neu-shadow-raised:
@@ -195,7 +195,7 @@
   --neu-cast-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
 
   --bg: var(--neu-base);
-  --bg-alt: #4a3928;
+  --bg-alt: #4a3627;
   --surface: var(--neu-base);
   --surface-raised: var(--neu-base);
 }
