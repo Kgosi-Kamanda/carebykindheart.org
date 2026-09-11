@@ -1,27 +1,27 @@
 /* ==========================================================================
    Care by KindHeart — Design System
-   Brand: Inland Northwest — pine forest, sun-warmed clay, river slate.
-   Grounded in Spokane County's landscape (Ponderosa pine, basalt scablands,
-   the Spokane River, Palouse wheat gold) rather than generic healthcare teal.
+   Brand: Golden Hour — meadow green, honey gold, open sky blue.
+   Bright and welcoming rather than clinical or somber: spring growth,
+   warm evening light, and clear Inland Northwest sky.
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
   /* --- Brand hues (light mode) --- */
-  --pine-950: #15251b;
-  --pine-900: #1c3123;
-  --pine-800: #26452f;
-  --pine-700: #345c3f;
-  --pine-600: #47774f;
-  --pine-100: #dfe9de;
+  --pine-950: #1f5c3e;
+  --pine-900: #26714a;
+  --pine-800: #2f8558;
+  --pine-700: #3d9964;
+  --pine-600: #4fae78;
+  --pine-100: #dff3e7;
 
-  --slate-900: #26404a;
-  --slate-700: #2e4e58;
-  --slate-600: #3f6672;
-  --slate-500: #5a8b99;
-  --slate-300: #9dc3cc;
-  --slate-100: #dcecef;
+  --slate-900: #1a3b4a;
+  --slate-700: #24586f;
+  --slate-600: #2e6b8a;
+  --slate-500: #4a93b8;
+  --slate-300: #8fc3db;
+  --slate-100: #e4f1f6;
 
   --rust-900: #4a1810;
   --rust-700: #7a2a1c;
@@ -30,25 +30,25 @@
   --rust-300: #dba08f;
   --rust-100: #f5ded6;
 
-  --clay-800: #7a4a1f;
-  --clay-700: #a8651f;
-  --clay-600: #cf7f35;
-  --clay-500: #e0a868;
-  --clay-300: #efc99b;
-  --clay-100: #fbeedd;
+  --clay-800: #b87a1e;
+  --clay-700: #d6941f;
+  --clay-600: #f2a93c;
+  --clay-500: #f5bd66;
+  --clay-300: #f9d89b;
+  --clay-100: #fdefd9;
 
-  --stone-900: #23201b;
-  --stone-800: #332f27;
-  --stone-600: #5c554a;
-  --stone-400: #8c8271;
-  --stone-200: #e2dcca;
-  --stone-100: #eee7d8;
-  --stone-50: #f8f5ec;
+  --stone-900: #2e2717;
+  --stone-800: #4a3f29;
+  --stone-600: #7a6b52;
+  --stone-400: #c9b896;
+  --stone-200: #eddfc0;
+  --stone-100: #f7ecd3;
+  --stone-50: #fdf6e8;
   --white: #ffffff;
 
   /* --- Semantic tokens: light mode --- */
   --bg: var(--neu-base);
-  --bg-alt: #e7e0cf;
+  --bg-alt: #f2e4c8;
   --surface: var(--neu-base);
   --surface-raised: var(--neu-base);
   --text: var(--stone-900);
@@ -67,7 +67,7 @@
   --brand-rust-hover: var(--rust-700);
 
   --focus-ring: var(--slate-600);
-  --shadow-color: 143 30% 8%;
+  --shadow-color: 150 40% 10%;
   --shadow-sm: 0 1px 2px hsl(var(--shadow-color) / 0.08);
   --shadow-md: 0 6px 20px -4px hsl(var(--shadow-color) / 0.16);
   --shadow-lg: 0 20px 45px -12px hsl(var(--shadow-color) / 0.28);
@@ -79,9 +79,9 @@
 
   /* --- Neumorphism: carve-able base + light-source shadow pair --- */
   --neu-radius: 22px;
-  --neu-base: #f0ebdd;
+  --neu-base: #fdf6e8;
   --neu-light-rgb: 255, 255, 255;
-  --neu-dark-rgb: 173, 160, 138;
+  --neu-dark-rgb: 196, 178, 140;
   --neu-shadow-raised:
     4px 4px 8px rgba(var(--neu-dark-rgb), 0.32),
     -4px -4px 8px rgba(var(--neu-light-rgb), 0.5);
@@ -106,30 +106,30 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #15251b;
-    --bg-alt: #1c3123;
-    --surface: #1f3a2a;
-    --surface-raised: #1f3a2a;
-    --text: #f3efe4;
-    --text-muted: #b7c2a9;
+    --bg: #1b4a34;
+    --bg-alt: #22593f;
+    --surface: #1f5238;
+    --surface-raised: #1f5238;
+    --text: #fbf3e1;
+    --text-muted: #c7d6be;
     --text-on-brand: #ffffff;
-    --border: #2c4a37;
-    --border-strong: #3e6650;
+    --border: #2e6b4a;
+    --border-strong: #3f8558;
 
-    --brand-primary: #a7c9ab;
-    --brand-primary-hover: #c3ddc6;
-    --brand-slate: #6fa8b5;
-    --brand-slate-hover: #9dc3cc;
-    --brand-clay: #e0a868;
-    --brand-clay-hover: #efc99b;
+    --brand-primary: #93ddb3;
+    --brand-primary-hover: #b5eac9;
+    --brand-slate: #6fb8d9;
+    --brand-slate-hover: #9ad0e8;
+    --brand-clay: #f5bd66;
+    --brand-clay-hover: #f9d89b;
     --brand-rust: #dba08f;
     --brand-rust-hover: #b8503a;
 
-    --focus-ring: #a7c9ab;
-    --shadow-color: 143 40% 3%;
+    --focus-ring: #93ddb3;
+    --shadow-color: 150 45% 4%;
     color-scheme: dark;
 
-    --neu-base: #1f3a2a;
+    --neu-base: #1f5238;
     --neu-light-rgb: 255, 255, 255;
     --neu-dark-rgb: 0, 0, 0;
     --neu-shadow-raised:
@@ -147,37 +147,37 @@
     --neu-cast-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
 
     --bg: var(--neu-base);
-    --bg-alt: #24402e;
+    --bg-alt: #26603f;
     --surface: var(--neu-base);
     --surface-raised: var(--neu-base);
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: #15251b;
-  --bg-alt: #1c3123;
-  --surface: #1f3a2a;
-  --surface-raised: #1f3a2a;
-  --text: #f3efe4;
-  --text-muted: #b7c2a9;
+  --bg: #1b4a34;
+  --bg-alt: #22593f;
+  --surface: #1f5238;
+  --surface-raised: #1f5238;
+  --text: #fbf3e1;
+  --text-muted: #c7d6be;
   --text-on-brand: #ffffff;
-  --border: #2c4a37;
-  --border-strong: #3e6650;
+  --border: #2e6b4a;
+  --border-strong: #3f8558;
 
-  --brand-primary: #a7c9ab;
-  --brand-primary-hover: #c3ddc6;
-  --brand-slate: #6fa8b5;
-  --brand-slate-hover: #9dc3cc;
-  --brand-clay: #e0a868;
-  --brand-clay-hover: #efc99b;
+  --brand-primary: #93ddb3;
+  --brand-primary-hover: #b5eac9;
+  --brand-slate: #6fb8d9;
+  --brand-slate-hover: #9ad0e8;
+  --brand-clay: #f5bd66;
+  --brand-clay-hover: #f9d89b;
   --brand-rust: #dba08f;
   --brand-rust-hover: #b8503a;
 
-  --focus-ring: #a7c9ab;
-  --shadow-color: 143 40% 3%;
+  --focus-ring: #93ddb3;
+  --shadow-color: 150 45% 4%;
   color-scheme: dark;
 
-  --neu-base: #1f3a2a;
+  --neu-base: #1f5238;
   --neu-light-rgb: 255, 255, 255;
   --neu-dark-rgb: 0, 0, 0;
   --neu-shadow-raised:
@@ -195,7 +195,7 @@
   --neu-cast-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
 
   --bg: var(--neu-base);
-  --bg-alt: #24402e;
+  --bg-alt: #26603f;
   --surface: var(--neu-base);
   --surface-raised: var(--neu-base);
 }
@@ -475,7 +475,7 @@ li:last-child { margin-bottom: 0; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(100deg, rgba(21,37,27,0.94) 0%, rgba(21,37,27,0.82) 40%, rgba(21,37,27,0.5) 78%, rgba(21,37,27,0.3) 100%);
+  background: linear-gradient(100deg, rgba(31,92,62,0.94) 0%, rgba(31,92,62,0.82) 40%, rgba(31,92,62,0.5) 78%, rgba(31,92,62,0.3) 100%);
   z-index: 0;
 }
 .hero--photo > .container { position: relative; z-index: 1; }
@@ -514,7 +514,7 @@ li:last-child { margin-bottom: 0; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(21,37,27,0.5) 0%, rgba(21,37,27,0.78) 100%);
+  background: linear-gradient(180deg, rgba(31,92,62,0.5) 0%, rgba(31,92,62,0.78) 100%);
 }
 .section-breaker__content {
   position: relative;
@@ -679,8 +679,8 @@ li:last-child { margin-bottom: 0; }
 
 /* --- Footer --- */
 .site-footer { background: var(--pine-950); color: #c5ddd8; padding: 72px 0 28px; margin-top: 40px; }
-[data-theme="dark"] .site-footer { background: #0d1811; }
-.site-footer a { color: #d3ddc9; text-decoration: none; }
+[data-theme="dark"] .site-footer { background: #0f2e1e; }
+.site-footer a { color: #d7ecd9; text-decoration: none; }
 .site-footer a:hover { color: #fff; text-decoration: underline; }
 .footer__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; }
 @media (max-width: 800px) { .footer__grid { grid-template-columns: repeat(2, 1fr); } }
@@ -688,12 +688,12 @@ li:last-child { margin-bottom: 0; }
 .footer__grid h4 { color: #fff; font-family: var(--font-body); font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 18px; }
 .footer__grid ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 14px; font-size: 0.92rem; line-height: 1.5; }
 .footer__grid ul li { margin-bottom: 0; }
-.footer__brand p { color: #a8b49a; max-width: 32ch; }
+.footer__brand p { color: #a7c4a8; max-width: 32ch; }
 .footer__social { display: flex; gap: 10px; margin-top: 18px; }
 .footer__social a { width: 44px; height: 44px; border: 1px solid rgba(255,255,255,0.25); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: background 0.25s var(--ease), border-color 0.25s var(--ease); }
 .footer__social a:hover { background: var(--brand-slate); border-color: var(--brand-slate); }
 .footer__social svg { width: 17px; height: 17px; }
-.footer__bottom { margin-top: 56px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.12); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; font-size: 0.82rem; color: #8f9a83; }
+.footer__bottom { margin-top: 56px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.12); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; font-size: 0.82rem; color: #8faa8c; }
 .footer__bottom ul { display: flex; gap: 20px; list-style: none; padding: 0; margin: 0; flex-wrap: wrap; }
 .footer__bottom ul li { margin-bottom: 0; }
 
@@ -747,7 +747,7 @@ li:last-child { margin-bottom: 0; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(100deg, rgba(21,37,27,0.92) 0%, rgba(21,37,27,0.8) 45%, rgba(21,37,27,0.62) 100%);
+  background: linear-gradient(100deg, rgba(31,92,62,0.92) 0%, rgba(31,92,62,0.8) 45%, rgba(31,92,62,0.62) 100%);
   z-index: 0;
 }
 .page-banner--photo > .container { position: relative; z-index: 1; }
@@ -855,7 +855,7 @@ table.dos-donts th { font-size: 0.8rem; text-transform: uppercase; letter-spacin
 .service-photo__note {
   position: absolute;
   bottom: 0; left: 0; right: 0;
-  background: linear-gradient(to top, rgba(21,37,27,0.88) 0%, transparent 100%);
+  background: linear-gradient(to top, rgba(31,92,62,0.88) 0%, transparent 100%);
   padding: 28px 24px 22px;
   border-radius: 0 0 var(--radius-lg) var(--radius-lg);
 }
