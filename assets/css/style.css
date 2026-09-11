@@ -43,12 +43,12 @@
   --stone-400: #c9b896;
   --stone-200: #eddfc0;
   --stone-100: #f7ecd3;
-  --stone-50: #fffaf0;
+  --stone-50: #fffdf9;
   --white: #ffffff;
 
   /* --- Semantic tokens: light mode --- */
   --bg: var(--neu-base);
-  --bg-alt: #f8ecd5;
+  --bg-alt: #fcf3e3;
   --surface: var(--neu-base);
   --surface-raised: var(--neu-base);
   --text: var(--stone-900);
@@ -79,9 +79,9 @@
 
   /* --- Neumorphism: carve-able base + light-source shadow pair --- */
   --neu-radius: 22px;
-  --neu-base: #fffaf0;
+  --neu-base: #fffdf9;
   --neu-light-rgb: 255, 255, 255;
-  --neu-dark-rgb: 205, 190, 155;
+  --neu-dark-rgb: 214, 204, 184;
   --neu-shadow-raised:
     4px 4px 8px rgba(var(--neu-dark-rgb), 0.32),
     -4px -4px 8px rgba(var(--neu-light-rgb), 0.5);
